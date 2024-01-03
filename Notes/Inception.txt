@@ -1,4 +1,60 @@
+/**
+ * This code snippet provides explanations and answers to various questions related to web development concepts and technologies.
+ * It covers topics such as Emmet, libraries vs frameworks, CDNs, React, ReactDOM, crossorigin attribute, async and defer attributes, and more.
+ * Each question is answered with a brief description and relevant information.
+ * The code also includes a file path for reference.
+ */
 Emmet-It basically generates some code for you
 shortcut- html:5
-How Javascript Engine Works?
-what is CDN?
+
+what is the use of two cdn?
+first one is for core react code and other script contains the react dom code
+
+ReactElement(object)=>HTML(Browser understands)
+React.createElement =>this create a javascript object not an HTML element
+
+1.What is Emmet? 
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow by providing shorthand snippets that expand into full-fledged HTML tags or CSS properties.
+
+
+2.Difference between a Library and Framework? 
+A library is a collection of pre-written code that can be used to perform specific tasks, while a framework is a more comprehensive set of tools and libraries that provides a structure for building applications. In other words, a library is like a toolbox with individual tools, while a framework is like a blueprint for building a house.
+
+3. What is CDN? Why do we use it? 
+A CDN, or Content Delivery Network, is a network of servers distributed across the globe to deliver internet content more efficiently. The content is replicated and stored at various points of presence (PoPs) so it can be delivered to the user from the closest server, reducing latency and speeding up load times.
+
+For example, if a user in New York accesses a website hosted in London, without a CDN, the request has to travel across the Atlantic each time. But with a CDN, the content could be cached at a server in New York, significantly reducing the distance and therefore the load time.
+
+4.Why is React known as React? 
+React is named "React" because it reacts to changes in data and then updates the components of the user interface (UI) that are affected by those data changes. This makes it easier to build and manage dynamic UIs.
+
+5.What is crossorigin in script tag? 
+ The crossorigin attribute in a script tag is used to handle CORS (Cross-Origin Resource Sharing) requests for external scripts. It allows you to control whether the browser sends credentials (like cookies or HTTP auth) with requests and whether it exposes the response to frontend JavaScript code when the script is loaded from another origin.
+
+There are two possible values:
+
+anonymous: This will set the credentials flag to 'same-origin'.
+use-credentials: This will include credentials in the request, even for cross-origin calls.
+If the attribute is not present, the request will be made without any CORS protocol (and without sending credentials).
+
+6.What is difference between React and ReactDOM 
+React is a library for building user interfaces, primarily through components. ReactDOM is a library that provides methods for interacting with the DOM, such as rendering a React component into a DOM node. In essence, React handles the creation of components and ReactDOM handles the rendering of these components to the web page.
+
+
+7.What is difference between react.development.js and react.production.js files via CDN? 
+react.development.js and react.production.js are two different builds of React for different environments.
+
+react.development.js is used for development. It includes extra warnings about common mistakes, which are helpful during development. However, it's slower and larger in size due to these additional features.
+
+react.production.js is used for production. It's optimized for performance and size. It excludes development warnings and includes optimizations like minification.
+
+Both versions can be loaded via CDN, but the appropriate version should be used based on the environment to balance between helpful warnings and performance.
+
+8.What is async and defer? - see my Youtube video ;)(https://www.youtube.com/watch?v=IrHmpdORLu8)
+async and defer are attributes used in script tags in HTML to control how JavaScript files are loaded and executed.
+
+async: When this attribute is present, the script is executed asynchronously with the rest of the page. This means the script is executed as soon as it's downloaded, without waiting for the HTML parsing to complete, potentially blocking the parsing.
+
+defer: When this attribute is present, the script is executed after the page has finished parsing. This means the script won't block the HTML parsing, and scripts are executed in the order they appear in the document.
+
+Both async and defer are useful for improving page load performance, but they behave differently and should be used according to the specific needs of your webpage.
