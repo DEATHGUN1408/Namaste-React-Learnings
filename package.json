@@ -1,0 +1,11 @@
+{
+  "name": "namaste-react-learnings",
+  "version": "1.0.0",
+  "description": "course follow along by akhshay saini",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "divam srivastava",
+  "license": "ISC"
+}

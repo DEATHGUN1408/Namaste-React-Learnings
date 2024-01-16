@@ -1,0 +1,49 @@
+notes
+1. What is package.json?
+Package.json is a configuration for npm
+2. What is npm?
+npm manages the dependency and take cares of packages in package.json 
+3. most important dependency in package.json
+it is a bundler which bundles our project (eg webpack,vite,parcel)
+two types of dependences
+1. dev depenices
+2. normal depende
+dev depend are required in development phase
+normal dependencies are used for production work
+
+command npm insall -D parcel
+difference in package.json an package-lock.json
+The difference between package.json and package-lock.json is that package.json is a configuration file that lists the dependencies and other metadata of a project, while package-lock.json is an automatically generated file that locks the versions of all installed dependencies. It ensures that the same versions of dependencies are installed across different environments, providing deterministic builds.
+
+transitive dependencies
+ransitive dependencies in software are the dependencies of the direct dependencies in your project. For example, if your project A depends on library B, and library B depends on library C, then library C is a transitive dependency for your project A. It's important to manage these correctly, as they can impact your project's functionality and stability.
+if you have package-lock.json and package.json you can recreate your node modules
+
+npx parcel index.html
+npm install react
+npm means installing a package
+npx-means executing a package
+
+-parcel
+dev build
+local server
+file watching algorithm wriiten in c++
+
+hot module replacement-Hot Module Replacement (HMR) in Parcel allows you to replace modules in a running application without reloading the entire page. This provides a faster iterative development experience as you don't need to wait for a full page reload to see your changes. It's especially useful for preserving application state while tweaking UI components.
+
+caching-faster builds
+image optimization
+minification of our file
+bundling
+compressing
+Consistent Hashing
+Code Splitting
+Differential Bundling-spporting older browsers
+Diagnostic 
+Error handling
+Treee Shaking -removed unused code
+Read Parcel Documentation
+
+
+npx build parcel index.html
+remove main from package.json-app.js

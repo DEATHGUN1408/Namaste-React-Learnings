@@ -1,0 +1,5 @@
+React.createElement=> object=>HTMLElement(by rendering)
+npm run start=npm start 
+in scripts portion of package.json for custom scripts
+run: parcel index.html
+build:"parcel build index.html"
