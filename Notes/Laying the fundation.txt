@@ -3,3 +3,14 @@ npm run start=npm start
 in scripts portion of package.json for custom scripts
 run: parcel index.html
 build:"parcel build index.html"
+jsx is transpiled into react.createElement=>reactElement-JS object=>HTMLElement(render) by babel
+if you have to give ya attribute to your jsx you have to write it in camel case 
+how to write a,img tag in jsx with attributes 
+if a finction is returning a react component then it is called reeact functional component
+cross-site scripting
+Cross-site scripting (XSS) is a security vulnerability where an attacker injects malicious scripts into a trusted website. These scripts can steal sensitive information or modify web content. Prevention involves proper validation and sanitization of user input.
+but js engine basically prevents us from this attack injection data
+JSX, used in React, automatically escapes inserted expressions, converting potentially harmful characters into their literal representations. This prevents those values from being interpreted as code, thus helping to protect against XSS attacks.
+
+
+<Title/>=<Title></Title>={Title()}
